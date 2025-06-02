@@ -1,11 +1,12 @@
 
 
 
-def prt_element(*args):
-    print(len(args),args)
+def prt_elements(*args):
+    last_index = len(args) -1
+    msg = "[ "
     
+    for idx, val in enumerate(args):
+        msg += str(val) + "," if idx != last_index else str(val)
+    msg += " ]"
     
-prt_element()
-prt_element(1)
-prt_element(1,100)
-prt_element(1,100,2,300)
+    print(msg)
