@@ -1,8 +1,11 @@
 
 
-def plot(x,y,c = "red", w = "1", m = None):
-    print(x,x,c,w,m)
+
+def prt_element(*args):
+    print(len(args),args)
     
-plot(2,3)
-plot(2,3, w = "2")
-plot(2,3 , w = "2", m = "o", c= "red")
+    
+prt_element()
+prt_element(1)
+prt_element(1,100)
+prt_element(1,100,2,300)
