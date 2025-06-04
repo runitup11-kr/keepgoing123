@@ -1,7 +1,7 @@
 
 
-def prt_elements(a,b,c,d,*e):
+def prt_elements(a,b,c, e = 1000, *d):
     print(a,b,c,d,e)
     
 
-prt_elements(1,2,3,4,5,6,7)
+prt_elements(1,2,3)
